@@ -24,11 +24,14 @@
 
 * Additional Requirements and Installation Steps:	
 	1. Install MongoDB :
-			> Run "mongo_install.bash" (*Note : Run it only if MongoDB is not present on your system, else data loss might occur!)
+			> Run "mongo_install.bash" (*Note : Run it only if MongoDB is not present on your system, else data loss might 
+			  occur!)
 			OR
 			> Follow steps on "http://docs.mongodb.org/manual/"
-	2. /*VEDANG please write about all necessary steps for JAVA SERVLET CONFIG in identical manner as above.
-	3. Any more if req. */
+			
+	2. Please make appropriate changes in source code of Analytics/src/java/newpackage/Analytics.java (database and 
+	   collection fields of Mongo Connection).
+	3. Deploy the Analytics.war on any Java Server and run the application.   
 
 * Flow of Program:
 	1. Pass weblog.txt as a command line argument to 'readlog.py'
